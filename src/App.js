@@ -11,7 +11,8 @@ const App = props => {
   const sideHandler = side => {
     setChosenSide(side);
   };
-  const charSelectHandler = charId => {
+  const charSelectHandler = event => {
+    const charId = event.target.value;
     setSelectedCharacter(charId);
   };
 
